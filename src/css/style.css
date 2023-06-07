@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 400px;
+  min-height: 400px;
+  background-color: lightblue;
+  gap: 1px;
+}
+
+.cell {
+  background-color: gray;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}

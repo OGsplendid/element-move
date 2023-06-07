@@ -1,0 +1,42 @@
+{
+  "name": "map",
+  "version": "1.0.0",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/xkbg21450a6oyxog?svg=true)](https://ci.appveyor.com/project/OGsplendid/element-move)",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "make": "http-server ./dist",
+    "lint": "eslint .",
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGsplendid/element-move.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OGsplendid/element-move/issues"
+  },
+  "homepage": "https://github.com/OGsplendid/element-move#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-jest": "^29.5.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "dependencies": {
+    "core-js": "^3.30.0"
+  }
+}
