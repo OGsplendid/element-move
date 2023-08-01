@@ -28,9 +28,9 @@ export default class Table {
 
   rotate() {
     const cells = [...this.element.querySelectorAll('.cell')];
-    const index = this.findProperIndex();
     const goblinElement = this.createGoblinElement();
     setInterval(() => {
+      const index = this.findProperIndex();
       cells.forEach((el) => el.classList.remove('active'));
       cells[index].classList.add('active');
       cells[index].appendChild(goblinElement);
