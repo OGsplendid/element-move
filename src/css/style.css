@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.body {
+  width: 100%;
+  min-height: 400px;
+}
+
 .table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
