@@ -7,7 +7,7 @@ export default class Table {
     }
   }
 
-  createGoblinElement() {
+  static createGoblinElement() {
     const goblinElement = document.createElement('img');
     goblinElement.classList.add('goblin');
     goblinElement.src = 'https://github.com/netology-code/ahj-homeworks/blob/AHJ-50/dom/pic/goblin.png?raw=true';
@@ -28,12 +28,12 @@ export default class Table {
 
   rotate() {
     const cells = [...this.element.querySelectorAll('.cell')];
-    const goblinElement = this.createGoblinElement();
+    const goblinElement = Table.createGoblinElement();
     setInterval(() => {
       const index = this.findProperIndex();
       cells.forEach((el) => el.classList.remove('active'));
       cells[index].classList.add('active');
       cells[index].appendChild(goblinElement);
-    }, 1000);
+    }, 500);
   }
 }
